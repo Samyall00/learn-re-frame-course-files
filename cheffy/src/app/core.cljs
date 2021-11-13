@@ -3,7 +3,7 @@
 
 (defn app
   []
-  [:div "Yes"])
+  [:div "Hello"])
 
 (defn ^:dev/after-load start
   []
