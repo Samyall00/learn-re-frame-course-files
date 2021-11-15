@@ -12,7 +12,7 @@
            (fn []
                  [:> Row {:justify-content "center"}
                   [:> Col {:xs 12 :sm 6}
-                   [page-nav {:center "Log in"}]
+                   [page-nav {:center "Log in!"}]
                    [form-group {:id :email
                                 :label "Email"
                                 :type "email"
@@ -29,5 +29,5 @@
                           :on-click #(rf/dispatch [:set-active-nav :sign-up])}
                       "New to Cheffy? Create an account!"]]
                     [:> Box
-                     [:> Button {:on-click #(js/console.log "log-in")}
+                     [:> Button {:on-click #(rf/dispatch [:log-in @values])}
                       "Log in"]]]]])))
